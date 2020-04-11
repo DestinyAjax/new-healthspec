@@ -1,0 +1,163 @@
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background: #e7eff5;
+
+        min-height: 100vh;
+        height: auto;
+    }
+    .content {
+        flex: 1;
+        width: 90%;
+        margin: 55px auto;
+    }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .title {
+        color: #80898A;
+        font-size: 20px;
+        line-height: 56px;
+    }
+    .formContainer {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 15px 15px;
+        border: 1px solid #E5E5E5;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        cursor: pointer;
+    }
+.card:hover {
+    border: 1px solid #15974b;
+}
+
+.cardTitle,
+.cardContent {
+    color: #80898A;
+    font-size: 16px;
+}
+.cardTitle {
+    margin: 10px 0;
+}
+.cardIcon {
+    color: #80898A;
+    font-size: 16px;
+}
+
+
+.summaryCard {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 15px 15px;
+    border: 1px solid #E5E5E5;
+}
+
+.summaryCardTitle {
+    color: #505458;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.b_r_default {
+    border-right: 1px solid #E5E5E5;
+}
+
+.summaryCardGraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.summaryCardBottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 5px 5px;
+    border-top: 1px solid #E5E5E5;
+}
+.summaryCardDescription {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.summaryCardCount {
+    font-size: 20px;
+    color: #505458;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        background: #e7eff5;
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sidebar {
+        width: 10%;
+    }
+    .dashboard {
+        width: 87%;
+    }
+    .button {
+        opacity: 1;
+        padding: 10px;
+        display: block;
+        font-size: 16px;
+        cursor: pointer;
+
+        color: #FFFFFF;
+        border-radius: 5px;
+        background: #15974b;
+        letter-spacing: 0.29px;
+        transition: all 0.3s ease 0s;
+        border: 1px solid transparent;
+    }
+    
+    .button:hover {
+        opacity: 0.75;
+        color: #FFF;
+        background-color: #e43829;
+    }
+    .actualContent {
+        background: #FFF;
+        padding: 45px 45px;
+        margin-bottom: 50px;
+    }
+
+
+    .formContainer {
+        margin-top: 35px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    .card {
+        width: 32%;
+    }
+
+    .summaryCard {
+        width: 32%;
+    }
+}

@@ -1,0 +1,3 @@
+service_code,price,limit,allow_out_of_station,limit_allowed,limit_type,payment_type,payment_percentage
+6_exploratory_laparotomy,19000,200,1,200,DAY,CAPITATED,20
+3_hernioraphy,2000,22,1,,,,

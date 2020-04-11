@@ -1,0 +1,95 @@
+
+    .photo-card {
+        height: 453px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 16, 17, 0.8) 100%);
+    }
+
+    .forth {
+        background-image: url('/images/COUNTER-03.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .forth .cover {
+        background-color: #000000a1;
+        height: 100%;
+        position: relative;
+    }
+
+    .forth .cover .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .forth .cover .content .square {
+        width: 41px;
+        height: 41px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .forth .cover .content p, .third .cover .content p, .second .cover .content p {
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    .second {
+        background-image: url('/images/Rectangle 8.2.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .second .cover {
+        background-color: #000000a1;
+        height: 100%;
+        position: relative;
+    }
+
+    .second .cover .content {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .second .cover .content .square, .third .cover .content .square {
+        width: 41px;
+        height: 41px;
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        padding: 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .third {
+        background-image: url('/images/Rectangle 8.1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .third .cover {
+        background-color: #000000a1;
+        height: 100%;
+        position: relative;
+    }
+
+    .third .cover .content {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }

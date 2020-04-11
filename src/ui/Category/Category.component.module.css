@@ -1,0 +1,63 @@
+.container {
+    padding: 25px;
+    border-radius: 8px;
+    background: #FFFFFF;
+
+    margin-bottom: 15px;
+}
+
+.title {
+    color: #1954EC;
+    font-family: Lato;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.subTitle {
+    font-size: 18px;
+    color: #000000;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Playfair Display;
+}
+.description {
+    width: 80%;
+    color: #80898A;
+    font-size: 16px;
+    font-family: Lato;
+    line-height: 29px;
+}
+.getStartedButton {
+    margin-top: 25px;
+    cursor: pointer;
+
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+}
+.getStartedButton .fa {
+    color: #15974b;
+}
+.getStarted {
+    margin-right: 10px;
+}
+
+.addBorder {
+    border: 1px solid #E5E5E5;
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 45%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+}

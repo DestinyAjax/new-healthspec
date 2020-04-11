@@ -1,0 +1,128 @@
+.container {
+    padding: 25px 25px;
+    border: 2px solid #253031;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+.body {
+    margin-top: 100px;
+}
+.items {
+    width: 80%;
+}
+.image {
+    width: 20%;
+
+    /* border: 1px solid #000; */
+}
+.item {
+    margin-bottom: 25px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.itemTitle {
+    width: 15%;
+    font-weight: bold;
+    font-size: 14px;
+}
+.itemDescription {
+    width: 75%;
+}
+
+.table {
+    margin-top: 50px;
+}
+
+.actions {
+    margin-top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.action {
+    margin-left: 15px;
+}
+
+.reject {
+    font-family: Lato;
+    text-align: center;
+    color: #80898A;
+    cursor: pointer;
+}
+
+
+
+.itemsImage {
+    display: flex;
+    justify-content: space-between;
+}
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.formContainer {
+    margin-top: 105px;
+}
+
+
+.submitEncounterButton {
+    margin-top: 25px;
+}
+.changer {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+
+.active {
+    color: #00695c;
+    padding: 2px 10px;
+    border-radius: 25px;
+    background: #b2dfdb;
+
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+.inactive {
+    cursor: pointer;
+    color: #CC0000;
+    padding: 2px 10px;
+    text-align: center;
+    border-radius: 25px;
+    background: #ef9a9a;
+    display: inline-block;
+}
+.pending {
+    color: #fff8e1;
+    background: #ffca28;
+    cursor: pointer;
+    padding: 2px 10px;
+    text-align: center;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 25px;
+    font-size: 16px;
+}

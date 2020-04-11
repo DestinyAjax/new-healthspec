@@ -1,0 +1,23 @@
+.formContainer {
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1200px) { 
+    .inlineGroup {
+        display: flex;
+        justify-content: space-between;
+    }
+    .inlineGroup .formGroup {
+        width: 48%;
+    }
+
+    .buttonContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .button {
+        width: 100px;
+    }
+}

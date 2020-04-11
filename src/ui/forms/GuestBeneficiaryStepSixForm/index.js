@@ -1,0 +1,1 @@
+export { default } from './GuestBeneficiaryStepSixForm.component.js';

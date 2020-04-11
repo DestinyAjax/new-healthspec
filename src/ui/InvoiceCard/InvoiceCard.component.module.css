@@ -1,0 +1,44 @@
+.container {
+    display: block;
+}
+.buttonContainer {
+    margin-top: 45px;
+}
+.button {
+}
+a.cancelOrBack {
+    display: block;
+    font-size: 16px;
+    font-family: Lato;
+    text-align: center;
+    color: #80898A;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1200px) { 
+    a.link {
+        order: 1;
+        display: block;
+    }
+    .buttonContainer {
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        position: relative;
+        top: 40px;
+    }
+    .button {
+        order: 2;
+        margin-left: 40px;
+    }
+    .cancelOrBack {
+        order: 1;
+        padding: 0 0 !important;
+
+        position: relative;
+        top: -10px;
+    }
+}

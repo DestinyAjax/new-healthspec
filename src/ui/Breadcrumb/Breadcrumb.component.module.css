@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+.item {
+    color: #80898A;
+    margin-right: 5px;
+    font-weight: bold;
+    line-height: 29px;
+    font-size: 14px;
+}
+.itemTwo {
+    color: #15974b;
+    font-size: 11px;
+}

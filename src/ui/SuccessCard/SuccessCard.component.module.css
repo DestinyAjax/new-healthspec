@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+}
+.imageContainer img {
+    width: 10%;
+}
+.success {
+    margin: 35px 0;
+    color: #253031;
+    font-weight: bold;
+    font-size: 24px;
+}
+.message {
+    line-height: 29px;
+    font-size: 16px;
+    font-family: Lato;
+    color: #80898A;
+}
+
+.redirectLink {
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    color: #15974b;
+    margin-top: 55px;
+    font-weight: bold;
+}

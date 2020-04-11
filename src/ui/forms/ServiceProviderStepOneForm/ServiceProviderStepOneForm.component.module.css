@@ -1,0 +1,66 @@
+.button {
+    margin-bottom: 25px;
+}
+a.link {
+    color: #15974b;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+a.cancelOrBack {
+    display: block;
+    font-size: 16px;
+    font-family: Lato;
+    text-align: center;
+    color: #80898A;
+    cursor: pointer;
+}
+.buttonContainer {
+    margin-bottom: 55px;
+}
+.linkButton {
+    border: 1px solid #15974b;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+    margin-right: 10px;
+}
+@media screen and (min-width: 1200px) {
+    .inlineGroup {
+        display: flex;
+        justify-content: space-between;
+    }
+    .inlineGroup .formGroup {
+        width: 48%;
+    }
+
+    .organizationFooter {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+    }
+    a.link {
+        order: 1;
+        display: block;
+    }
+    .buttonContainer {
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        position: relative;
+        top: 40px;
+    }
+    .button {
+        order: 2;
+        margin-left: 40px;
+    }
+    .cancelOrBack {
+        order: 1;
+        padding: 0 0 !important;
+
+        position: relative;
+        top: -10px;
+    }
+}

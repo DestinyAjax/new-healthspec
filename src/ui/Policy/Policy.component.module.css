@@ -1,0 +1,76 @@
+.container {
+    padding: 25px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    margin-bottom: 15px;
+
+    margin-right: 15px;
+    min-width: 80%;
+}
+
+.title {
+    font-size: 18px;
+    color: #000000;
+    line-height: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Playfair Display;
+}
+.subTitle {
+    font-size: 36px;
+    color: #15974b;
+    font-weight: 900;
+    font-family: Lato;
+    margin-bottom: 15px;
+}
+.description {
+    width: 80%;
+    color: #80898A;
+    font-size: 16px;
+    font-family: Lato;
+    line-height: 29px;
+}
+.getStartedButton {
+    margin-top: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.getStartedButton .fa {
+    color: #15974b;
+}
+.getStarted {
+    margin-right: 10px;
+}
+
+.policyItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.policyItem img {
+    margin-right: 10px;
+}
+.policyItem span {
+    line-height: 29px;
+    font-size: 16px;
+}
+
+.addBorder {
+    border: 1px solid #E5E5E5;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .container {
+        min-width: 45%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        min-width: 30%;
+        margin-bottom: 35px;
+    }
+}

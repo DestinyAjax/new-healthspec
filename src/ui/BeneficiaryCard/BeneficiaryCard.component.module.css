@@ -1,0 +1,59 @@
+.container {
+    display: block;
+}
+.buttonContainer {
+    margin-top: 45px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.button {
+    padding: 10px;
+    background: #15974b;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+.button a {
+    color: #FFFFFF;
+}
+
+.button:hover {
+  color: #FFF;
+  background-color: #e43829;
+
+  opacity: 0.75;
+}
+a.cancelOrBack {
+    display: block;
+    font-size: 16px;
+    font-family: Lato;
+    text-align: center;
+    color: #80898A;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1200px) {
+    a.link {
+        order: 1;
+        display: block;
+    }
+    .buttonContainer {
+
+    }
+    .button {
+        order: 2;
+        margin-left: 40px;
+    }
+    .cancelOrBack {
+        order: 1;
+        padding: 0 0 !important;
+
+        position: relative;
+        top: -10px;
+    }
+}

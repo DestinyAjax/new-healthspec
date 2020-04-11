@@ -1,0 +1,1 @@
+export { default } from './BeneficiaryStepFourFormNew.component.js';

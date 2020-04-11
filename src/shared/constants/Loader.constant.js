@@ -1,0 +1,2 @@
+export const START_LOADING = "START-LOADING";
+export const STOP_LOADING = "STOP_LOADING";
