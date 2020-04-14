@@ -1,16 +1,24 @@
-import { SHOW_MODAL, HIDE_MODAL } from './index';
+import { SHOW_MODAL, HIDE_MODAL, SET_MODAL } from './index';
 
-export const openModal = (modalType, modalProps) => {
+export const openModal = (modalType, modalProps, modalToggle) => {
 
     return {
         type: SHOW_MODAL,
         payload: {
             modalType,
-            modalProps
+            modalProps,
+            modalToggle
         }
     }
 
 }
+
+export const setModal = toggle => ({
+    type: SET_MODAL,
+    payload: {
+        modalToggle: toggle
+    }
+});
 
 export const closeModal = () => {
     return {

@@ -293,8 +293,8 @@ class BeneficiaryAdd extends Component {
 
             if (this.state.activeStep === 0) {
                 batchFormContainer = (
-                    <Card title="Beneficiary Upload (Batch)" style={{width:'100%'}}>
-                        <a className="downloadLink" href={require('../../../assets/files/beneficiary.csv')} download>Download format</a>
+                    <Card title="Beneficiary Upload (Batch)" style={{width:'100%',marginBottom: '30px'}}>
+                        <a className="downloadLink btn btn-sm btn-success" href={require('../../../assets/files/beneficiary.csv')} download>Download format</a><hr/>
                         <BeneficiaryBatchForm
                             sectors={this.props.sectors}
                             policies={this.props.policies}
@@ -302,7 +302,7 @@ class BeneficiaryAdd extends Component {
                             submittingForm={this.state.submittingBatchForm}
                             organization_profiles={this.props.organization_profiles}
                         />
-                    </Card> 
+                    </Card>
                 )
             }
 
@@ -325,7 +325,7 @@ class BeneficiaryAdd extends Component {
                 <Loader>
                     <LayoutContentWrapper>
                         <LayoutContent>
-                            {addBeneficiary}
+                            {addBeneficiary}<br/>
                             <hr/>
                             <div className="row">
                                 <div className="col-md-12">

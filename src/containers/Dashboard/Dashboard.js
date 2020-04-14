@@ -5,7 +5,6 @@ import useWindowSize from '@iso/lib/hooks/useWindowSize';
 import appActions from '@iso/redux/app/actions';
 import Sidebar from '../Sidebar/Sidebar';
 import Topbar from '../Topbar/Topbar';
-
 import { DashboardContainer, DashboardGlobalStyles } from './Dashboard.styles';
 
 const { Content, Footer } = Layout;
@@ -46,7 +45,7 @@ export default function Dashboard({children}) {
             style={{
               height: appHeight,
             }}
-          >
+          > 
             <Content className="isomorphicContent" style={styles.content}>
               {children}
             </Content>

@@ -4,7 +4,7 @@ import FooterStyleWrapper from './FooterComponent.styles';
 
 const FooterComponent = props => {
 	return (
-		<FooterStyleWrapper classname="FooterComponentStyle">
+		<FooterStyleWrapper className="FooterComponentStyle">
 			{props.bottomFooter && (
 				<div className="footerTop">
 					<div className="container">

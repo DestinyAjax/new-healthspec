@@ -2,10 +2,10 @@ import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import { closeModal } from '../Modal.action';
 import { store_picture } from './TakePicture.action';
-import styles from './TakePicture.component.module.css';
 import CameraPhoto, { FACING_MODES } from 'jslib-html5-camera-photo';
 import { Button } from 'reactstrap';
 import { FaCamera, FaUpload, FaCheck } from 'react-icons/fa';
+import './TakePicture.component.module.css';
 
 class TakePicture extends React.Component {
     constructor(props, context) {
@@ -91,11 +91,10 @@ class TakePicture extends React.Component {
     render() {
         let container = (
             <Fragment>
-                <div className={styles.imageContainer}>
-                    <video className={styles.video} ref={this.videoRef} autoPlay={true}/>
+                <div className="imageContainer">
+                    <video className="video" ref={this.videoRef} autoPlay={true}/>
                 </div>
-
-                <div className={styles.buttons}>
+                <div className="buttons">
                     <Button size="md" color="primary" className="mr-3" onClick={this.openCamera}><FaCamera /> Start</Button>
                     <Button size="md" color="success" className="ml-2" onClick={this.takePhoto}><FaUpload /> Snap</Button>
                 </div>
@@ -105,11 +104,11 @@ class TakePicture extends React.Component {
         {this.state.pictureTaken && (
             container = (
                 <Fragment>
-                    <div className={styles.imageContainer}>
+                    <div className="imageContainer">
                         <img src={this.state.dataUri} />
                     </div>
 
-                    <div className={styles.buttons}>
+                    <div className="buttons">
                         <Button size="md" color="success" onClick={this.finishTaken}><FaCheck /> Finish</Button>
                     </div>
                 </Fragment>
@@ -117,28 +116,40 @@ class TakePicture extends React.Component {
         )}
 
         return (
-            <Fragment>
-                <div className={styles.modal}>
-                    <div className={styles.body}>
-                        <div>
-                            <div className={styles.action}>
-                                <div className={styles.goBack} onClick={this.props.closeModal}>
-                                    <i className="fa fa-close" aria-hidden="true"></i>  Close
-                                </div>
+            <div style={{
+                background: 'rgba(0,0,0,.5)',
+                position: 'absolute',
+                zIndex: '50',
+                width: '100%',
+                height: '100vh' 
+            }}>
+                <div style={{
+                    width: '50%',
+                    maxHeight: '90%',
+                    borderRadius: '4px',
+                    backgroundColor: '#fff',
+                    margin: '150px auto',
+                    padding: '25px 25px'
+                }}>
+                    <div>
+                        <div className="action">
+                            <div className="goBack" onClick={this.props.closeModal}>
+                                <i className="fa fa-close" aria-hidden="true"></i>  Close
                             </div>
-
-                            {container}
                         </div>
+                        {container}
                     </div>
                 </div>
-            </Fragment>
+            </div>
         );
     };
 };
 
 
 const mapStateToProps = state => {
-    return {}
+    return {
+        modalToggle: state.modalToggle
+    }
 }
 
 const mapDispatchToProps = dispatch => {

@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 import ReactCrop from 'react-image-crop';
+import {Card} from 'antd';
 import swal from 'sweetalert';
 import 'react-image-crop/dist/ReactCrop.css';
 import styles from './ImageUploader.component.module.css';
 
 import { openModal, closeModal } from '../Modal/Modal.action';
 import TakePictureComponent, { TakePicture } from '../Modal/TakePicture';
-import { Button, Card, CardImg } from 'reactstrap';
+import { Button, CardImg } from 'reactstrap';
 import { FaCamera, FaFileUpload, FaCheck } from 'react-icons/fa';
 import { imageValidator } from '../../shared/utils/validation';
 
@@ -129,7 +130,7 @@ class ImageUploader extends React.Component {
             left: 0,
             behavior: 'smooth'
         });
-        this.props.openModal(TakePicture, {});
+        this.props.openModal(TakePicture, {}, true);
     };
 
     setImage = (file, image_string) => {
@@ -193,7 +194,7 @@ class ImageUploader extends React.Component {
             <Fragment>
                 <div className="row">
                     <div className="col-md-12">
-                        <Card>
+                        <Card style={{width: '100%'}}>
                             {src && (
                                 <ReactCrop
                                     src={src}

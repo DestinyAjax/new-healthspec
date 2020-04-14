@@ -1,5 +1,6 @@
 import moment from 'moment';
 import React, { Fragment } from 'react';
+import { Card } from 'antd';
 import CustomInput from '../../CustomInput';
 import CustomSelect from '../../CustomSelect';
 import CustomButton from '../../CustomButton';
@@ -253,13 +254,9 @@ class BeneficiaryStepOneFormNew extends React.Component {
 		return (
 			<Fragment>
 				<form onSubmit={this.props.handleSubmit}>
-					<div className="card">
-						<div className="card-header">
-							{toggleBtn}
-						</div>
-						<div className="card-body">
+					<Card title={toggleBtn} style={{width: '100%'}}>
 							<div className="container">
-								<div class="row">
+								<div className="row">
 								<div className="col-md-3 col-lg-3 col-sm-12 col-xs-12">
 									<Field
 										name="title"
@@ -716,16 +713,13 @@ class BeneficiaryStepOneFormNew extends React.Component {
 								)}
 							</div>
 							</div>
-						</div>
-						<div className="card-footer">
-							<div className="pull-right">
-								<CustomButton disabled={this.props.invalid || this.props.pristine}>
-									Next {" "}
-									<FaArrowRight />
-								</CustomButton>
-							</div>
-						</div>
-					</div>
+						</Card><hr/>
+						<div className="pull-right">
+							<CustomButton disabled={this.props.invalid || this.props.pristine}>
+								Next {" "}
+								<FaArrowRight />
+							</CustomButton>
+						</div> 
 				</form>
 			</Fragment>
 		);

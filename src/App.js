@@ -90,7 +90,6 @@ const MyTransaction = lazy(() => import("./pages/MyTransaction/MyTransaction"));
 
 const ReferralAll = lazy(() => import("./pages/ReferralAll/ReferralAll"));
 
-// const ReferAdd = lazy(() => import("./pages/ReferAdd"));
 // const ReferralView = lazy(() => import("./pages/ReferralView"));
 
 const PreAuthAdd = lazy(() => import("./pages/PreAuth/Add/PreAuthAdd"));
